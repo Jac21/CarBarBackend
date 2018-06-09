@@ -7,6 +7,7 @@ import { userGetByIdAction } from "./controller/UserGetByIdAction";
 import { userSaveAction } from "./controller/UserSaveAction";
 
 import { sendMessage } from "./controller/SendMessage";
+import { googleMaps } from "./controller/googleMaps";
 
 /**
  * All application routes.
@@ -46,5 +47,10 @@ export const AppRoutes = [
         path: "/send",
         method: "get",
         action: sendMessage
+    },
+    {
+        path: "/maps",
+        method: "get",
+        action: googleMaps
     }
 ];
