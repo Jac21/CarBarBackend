@@ -4,3 +4,4 @@ src/**/*.js.map
 
 .env
 ormconfig.json
+src/sensitive.ts

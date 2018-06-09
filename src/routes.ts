@@ -6,6 +6,8 @@ import { userGetAllAction } from "./controller/UserGetAllAction";
 import { userGetByIdAction } from "./controller/UserGetByIdAction";
 import { userSaveAction } from "./controller/UserSaveAction";
 
+import { sendMessage } from "./controller/SendMessage";
+
 /**
  * All application routes.
  */
@@ -39,5 +41,10 @@ export const AppRoutes = [
         path: "/users",
         method: "post",
         action: userSaveAction
+    },
+    {
+        path: "/send",
+        method: "get",
+        action: sendMessage
     }
 ];
