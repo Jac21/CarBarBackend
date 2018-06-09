@@ -1,27 +1,24 @@
 {
-  "name": "typeorm-typescript-express-example",
+  "name": "CarBarBackend",
   "version": "0.0.1",
-  "description": "Example how to use Express and TypeORM with TypeScript.",
+  "description": "Car Bar backend for swhackout 2018",
   "license": "MIT",
   "readmeFilename": "README.md",
   "author": {
-    "name": "Umed Khudoiberdiev",
-    "email": "pleerock.me@gmail.com"
+    "name": "Jeremy Cantu",
+    "email": "jcantu521@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/typeorm/typescript-express-example.git"
+    "url": "https://github.com/Jac21/CarBarBackend.git"
   },
   "bugs": {
-    "url": "https://github.com/typeorm/typescript-express-example/issues"
+    "url": "https://github.com/Jac21/CarBarBackend/issues"
   },
   "tags": [
     "orm",
     "typescript",
-    "typescript-orm",
-    "typeorm-sample",
-    "typeorm-example",
-    "typeorm-express-example"
+    "typescript-orm"
   ],
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
