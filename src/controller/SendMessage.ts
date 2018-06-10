@@ -58,7 +58,7 @@ export async function sendMessage(request: Request, response: Response) {
 
           client.messages
           .create({
-           body: 'Welcome to Car Bar! The Car Bar closest to you is at the HomeAway Office in the Domain. It is a 14 minute walk away from you!', // this is message body for texting
+           body: 'Welcome to Car Bar! The Car Bar closest to you is at the HomeAway Office in the Domain. It is a' + numberOfMins + ' minute walk away from you!', // this is message body for texting
           from: '+15037147388', //This is CarBar's Twilio number
           //Add media to a message 
           mediaUrl: 'https://raw.githubusercontent.com/Jac21/carbar-frontend/master/public/img/V1.png',
