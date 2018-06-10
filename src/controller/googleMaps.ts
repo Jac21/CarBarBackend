@@ -5,9 +5,17 @@ import { googleMapsApiKey } from "../sensitive";
 export async function googleMaps(request: Request, response: Response) {
 
   const https = require('https');
-  const googleMapsQuery = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=Vancouver+BC|Seattle&destinations=San+Francisco|Victoria+BC&mode=driving&language=en-EN&key=AIzaSyCnz6owGzTO8iZ04YlOzbG1XBN1BH7qIoo';
+  const googleMapsApiEndpoint = 'https://maps.googleapis.com/maps/api/distancematrix/json?';
+  const destinations = '&destinations=11800+Domain+Blvd+Austin+TX';
+  const origins = '&origins=11011+Domain+Drive+Austin+TX|1800+Plateau+Vista+Blvd+Round+Rock+TX';
+  const mode = '&mode=driving';
+  const language = '&language=en-EN';
+  const key = '&key=' + googleMapsApiKey;
+  const units = 'units=imperial';
 
- // const distMatrix;
+  
+  const googleMapsQuery = googleMapsApiEndpoint + units + origins + destinations + mode + language + key;
+
   https.get(googleMapsQuery, (res) => {
   console.log('statusCode:', res.statusCode);
 
