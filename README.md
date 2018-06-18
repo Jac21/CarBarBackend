@@ -1,4 +1,5 @@
-# CarBarBackend
+![logo](https://raw.githubusercontent.com/Jac21/carbar-frontend/master/media/V1.png)
+
 [![CircleCI](https://circleci.com/gh/Jac21/CarBarBackend.svg?style=shield)](https://circleci.com/gh/Jac21/CarBarBackend)
 
 # Installation
